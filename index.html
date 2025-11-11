@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chicago-style Thin Crust Pizza | Order Online | Fresh ingredients, authentic taste, fast delivery">
+    <meta name="keywords" content="pizza, chicago pizza, thin crust, delivery, pickup, catering">
+    <meta name="theme-color" content="#F15A24">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chicago Pizza | Authentic Thin Crust Pizza">
+    <meta property="og:description" content="Premium pizza delivery & pickup. Fresh ingredients, handcrafted daily.">
+    <meta property="og:image" content="https://yoursite.com/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yoursite.com">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chicago Pizza | Order Online">
+    <meta name="twitter:description" content="Authentic Chicago-style thin crust pizza delivered fresh">
+    <meta name="twitter:image" content="https://yoursite.com/og-image.jpg">
+    
+    <title>Chicago Pizza | Authentic Thin Crust Pizza | Order Online</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Chicago Premium Pizza",
+      "image": "https://yoursite.com/logo.jpg",
+      "priceRange": "$$",
+      "servesCuisine": "Pizza",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4775 W Panther Creek Dr",
+        "addressLocality": "The Woodlands",
+        "addressRegion": "TX",
+        "postalCode": "77381"
+      },
+      "telephone": "+1-281-555-1234",
+      "openingHours": ["Mo-Th 11:00-21:00", "Fr-Sa 11:00-22:00", "Su 12:00-21:00"],
+      "acceptsReservations": "False",
+      "menu": "https://yoursite.com/menu.html",
+      "paymentAccepted": "Cash, Credit Card, PayPal",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "2847"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content (Accessibility) -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" id="header" role="banner">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main Navigation">
+                <div class="nav__logo">
+                    <a href="index.html" aria-label="Chicago Pizza Home">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span class="logo-text">Chicago <span class="highlight">Pizza</span></span>
+                    </a>
+                </div>
+                
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="menu.html" class="nav__link">Our Menu</a></li>
+                    <li><a href="#locations" class="nav__link">Locations</a></li>
+                    <li><a href="catering.html" class="nav__link">Catering</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#rewards" class="nav__link">
+                        <i class="fas fa-gift"></i> Rewards
+                    </a></li>
+                </ul>
+                
+                <div class="nav__actions">
+                    <button class="btn-secondary" id="signInBtn" aria-label="Sign in to your account">
+                        <i class="fas fa-user"></i> Sign In
+                    </button>
+                    <a href="menu.html?openCart=true" class="btn-primary" aria-label="Start your pizza order">
+                        <i class="fas fa-shopping-cart"></i> Start Order
+                    </a>
+                    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__bg">
+                <div class="hero__overlay"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__badge" role="status" aria-live="polite">
+                        <i class="fas fa-fire"></i> Order now • Get it in 25-35 min
+                    </div>
+                    
+                    <h1 class="hero__title">
+                        Authentic Chicago-Style<br>
+                        <span class="highlight-text">Thin Crust Pizza</span>
+                    </h1>
+                    
+                    <p class="hero__subtitle">
+                        Handcrafted daily with premium ingredients. Choose your perfect slice.
+                    </p>
+
+                    <!-- Size Selector -->
+                    <div class="size-selector" role="radiogroup" aria-label="Select pizza size">
+                        <label class="size-option">
+                            <input type="radio" name="size" value="small" aria-label="Small 10 inch">
+                            <span class="size-box">
+                                <span class="size-icon">S</span>
+                                <span class="size-text">10"</span>
+                            </span>
+                        </label>
+                        <label class="size-option">
+                            <input type="radio" name="size" value="medium" checked aria-label="Medium 12 inch">
+                            <span class="size-box">
+                                <span class="size-icon">M</span>
+                                <span class="size-text">12"</span>
+                            </span>
+                        </label>
+                        <label class="size-option">
+                            <input type="radio" name="size" value="large" aria-label="Large 14 inch">
+                            <span class="size-box">
+                                <span class="size-icon">L</span>
+                                <span class="size-text">14"</span>
+                            </span>
+                        </label>
+                        <label class="size-option">
+                            <input type="radio" name="size" value="xlarge" aria-label="Extra Large 16 inch">
+                            <span class="size-box">
+                                <span class="size-icon">XL</span>
+                                <span class="size-text">16"</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero__cta">
+                        <a href="menu.html" class="btn-primary btn-lg" id="orderNowHero">
+                            <i class="fas fa-utensils"></i> Order Now
+                        </a>
+                        <a href="#menu" class="btn-outline btn-lg">
+                            <i class="fas fa-play-circle"></i> See Menu
+                        </a>
+                    </div>  
+
+                    <!-- Trust Badges -->
+                    <div class="trust-badges">
+                        <div class="badge-item">
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5 Rating</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Delivery $25+</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-clock"></i>
+                            <span>30 Min Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="hero__visual">
+                    <div class="pizza-circle">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&h=800&fit=crop" 
+                             alt="Delicious thin crust pizza with cherry tomatoes, basil and mozzarella" 
+                             class="pizza-image"
+                             fetchpriority="high"
+                             width="800"
+                             height="800">
+                        <div class="floating-ingredient ingredient-1" aria-hidden="true">🍅</div>
+                        <div class="floating-ingredient ingredient-2" aria-hidden="true">🧀</div>
+                        <div class="floating-ingredient ingredient-3" aria-hidden="true">🌿</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Finder -->
+        <section class="location-finder" id="locations">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Find Your Nearest Location</h2>
+                    <p class="section-subtitle">Enter your location to see real-time menu and pricing</p>
+                </div>
+                
+                <!-- Location Search -->
+                <div class="location-search">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" 
+                               placeholder="Enter City, State or ZIP Code" 
+                               id="locationInput"
+                               aria-label="Search for location by city, state or ZIP code">
+                        <button class="btn-primary" id="searchLocationBtn">
+                            <i class="fas fa-map-marker-alt"></i> Find Store
+                        </button>
+                    </div>
+                    <button class="btn-secondary detect-location" id="detectLocationBtn" aria-label="Use my current location">
+                        <i class="fas fa-location-crosshairs"></i> Use My Location
+                    </button>
+                </div>
+
+                <!-- Location Tabs -->
+                <div class="location-tabs">
+                    <button class="location-tab active" data-location="alden">
+                        <span class="tab-name">Alden Bridge</span>
+                        <span class="tab-status open">Open Now</span>
+                    </button>
+                    <button class="location-tab" data-location="rayford">
+                        <span class="tab-name">Rayford</span>
+                        <span class="tab-status open">Open Now</span>
+                    </button>
+                    <button class="location-tab" data-location="woodlands">
+                        <span class="tab-name">The Woodlands</span>
+                        <span class="tab-status closed">Closed</span>
+                    </button>
+                    <button class="location-tab" data-location="spring">
+                        <span class="tab-name">Spring</span>
+                        <span class="tab-status open">Open Now</span>
+                    </button>
+                </div>
+
+                <!-- Location Details -->
+                <div class="location-details active" id="alden">
+                    <div class="location-info">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>4775 W Panther Creek Dr<br>The Woodlands, TX 77381</p>
+                                <a href="https://maps.google.com/?q=4775+W+Panther+Creek+Dr" 
+                                   target="_blank" 
+                                   rel="noopener"
+                                   class="link-with-icon">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Mon-Thu: 11:00 AM - 9:00 PM<br>
+                                   Fri-Sat: 11:00 AM - 10:00 PM<br>
+                                   Sunday: 12:00 PM - 9:00 PM</p>
+                                <span class="eta-badge">
+                                    <i class="fas fa-bolt"></i> ETA: 25-30 min
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>
+                                    <a href="tel:+12815551234" class="phone-link">
+                                        (281) 555-1234
+                                    </a>
+                                </p>
+                                <div class="service-badges">
+                                    <span class="service-badge" title="Delivery available">
+                                        <i class="fas fa-truck"></i> Delivery
+                                    </span>
+                                    <span class="service-badge" title="Pickup available">
+                                        <i class="fas fa-shopping-bag"></i> Pickup
+                                    </span>
+                                    <span class="service-badge" title="Dine-in available">
+                                        <i class="fas fa-utensils"></i> Dine-in
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.4!2d-95.5!3d30.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA2JzAwLjAiTiA5NcKwMzAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Google Map showing restaurant location"
+                                aria-label="Map showing restaurant location at 4775 W Panther Creek Dr">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Preview Section -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Signature Pizzas</h2>
+                    <p class="section-subtitle">Handcrafted with love, delivered with care</p>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="category-filter">
+                    <button class="category-btn active" data-category="all">
+                        <i class="fas fa-pizza-slice"></i> All
+                    </button>
+                    <button class="category-btn" data-category="signature">
+                        <i class="fas fa-star"></i> Signature
+                    </button>
+                    <button class="category-btn" data-category="vegetarian">
+                        <i class="fas fa-leaf"></i> Vegetarian
+                    </button>
+                    <button class="category-btn" data-category="spicy">
+                        <i class="fas fa-pepper-hot"></i> Spicy
+                    </button>
+                    <button class="category-btn" data-category="custom">
+                        <i class="fas fa-sliders-h"></i> Build Your Own
+                    </button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid">
+                    <!-- Pizza Card 1 -->
+                    <article class="menu-card" data-category="signature vegetarian">
+                        <div class="card-badges">
+                            <span class="badge badge-popular">
+                                <i class="fas fa-fire"></i> Popular
+                            </span>
+                            <span class="badge badge-veg">
+                                <i class="fas fa-leaf"></i> Veg
+                            </span>
+                        </div>
+                        
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop" 
+                                 alt="The Blanco - White pizza with ricotta cheese, garlic and fresh herbs" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <button class="quick-view" aria-label="Quick view The Blanco">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <h3 class="card-title">The Blanco</h3>
+                            <p class="card-description">
+                                Creamy ricotta • Roasted garlic • Fresh basil • Olive oil drizzle
+                            </p>
+                            
+                            <div class="card-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                    <span class="review-count">(234)</span>
+                                </div>
+                                <div class="price">
+                                    Starting <strong>$11.99</strong>
+                                </div>
+                            </div>
+                            
+                            <a href="menu.html" class="btn-primary btn-block">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Pizza Card 2 -->
+                    <article class="menu-card" data-category="signature">
+                        <div class="card-badges">
+                            <span class="badge badge-new">
+                                <i class="fas fa-sparkles"></i> New
+                            </span>
+                        </div>
+
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop" 
+                                 alt="Tuscany - Italian sausage, peppers, onions and mozzarella" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <button class="quick-view" aria-label="Quick view Tuscany">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Tuscany</h3>
+                            <p class="card-description">
+                                Italian sausage • Bell peppers • Caramelized onions • Mozzarella
+                            </p>
+
+                            <div class="card-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                    <span class="review-count">(189)</span>
+                                </div>
+                                <div class="price">
+                                    Starting <strong>$13.99</strong>
+                                </div>
+                            </div>
+                            
+                            <a href="menu.html" class="btn-primary btn-block">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Pizza Card 3 -->
+                    <article class="menu-card" data-category="signature spicy">
+                        <div class="card-badges">
+                            <span class="badge badge-spicy">
+                                <i class="fas fa-fire"></i> Spicy
+                            </span>
+                            <span class="badge badge-popular">
+                                Popular
+                            </span>
+                        </div>
+
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&h=400&fit=crop" 
+                                 alt="The Jerk - Spicy jerk chicken with peppers and onions" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <button class="quick-view" aria-label="Quick view The Jerk">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">The Jerk</h3>
+                            <p class="card-description">
+                                Jerk chicken • Jalapeños • Red onions • Cilantro • Hot sauce
+                            </p>
+
+                            <div class="card-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                    <span class="review-count">(312)</span>
+                                </div>
+                                <div class="price">
+                                    Starting <strong>$14.99</strong>
+                                </div>
+                            </div>
+
+                            <a href="menu.html" class="btn-primary btn-block">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Pizza Card 4 -->
+                    <article class="menu-card" data-category="signature">
+                        <div class="card-badges">
+                            <span class="badge badge-chef">
+                                <i class="fas fa-award"></i> Chef's Choice
+                            </span>
+                        </div>
+
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=600&h=400&fit=crop" 
+                                 alt="Old Smokey - BBQ chicken with smoked gouda and red onions" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <button class="quick-view" aria-label="Quick view Old Smokey">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Old Smokey</h3>
+                            <p class="card-description">
+                                BBQ chicken • Smoked gouda • Red onions • Cilantro • BBQ drizzle
+                            </p>
+
+                            <div class="card-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                    <span class="review-count">(401)</span>
+                                </div>
+                                <div class="price">
+                                    Starting <strong>$13.99</strong>
+                                </div>
+                            </div>
+
+                            <a href="menu.html" class="btn-primary btn-block">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Build Your Own Card -->
+                    <article class="menu-card featured-card" data-category="custom">
+                        <div class="featured-content">
+                            <i class="fas fa-magic featured-icon"></i>
+                            <h3 class="card-title">Build Your Own</h3>
+                            <p class="card-description">
+                                Choose from 20+ premium toppings and create your perfect pizza
+                            </p>
+                            <ul class="featured-list">
+                                <li><i class="fas fa-check"></i> Fresh dough made daily</li>
+                                <li><i class="fas fa-check"></i> Unlimited toppings</li>
+                                <li><i class="fas fa-check"></i> 4 cheese options</li>
+                                <li><i class="fas fa-check"></i> Gluten-free crust available</li>
+                            </ul>
+                            <a href="menu.html#build" class="btn-primary btn-block">
+                                <i class="fas fa-hammer"></i> Start Building
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Margherita -->
+                    <article class="menu-card" data-category="vegetarian">
+                        <div class="card-badges">
+                            <span class="badge badge-veg">
+                                <i class="fas fa-leaf"></i> Veg
+                            </span>
+                        </div>
+
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=600&h=400&fit=crop" 
+                                 alt="Margherita - Classic tomato, mozzarella and fresh basil" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="400">
+                            <button class="quick-view" aria-label="Quick view Margherita">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+
+                        <div class="card-content">
+                            <h3 class="card-title">Margherita</h3>
+                            <p class="card-description">
+                                San Marzano tomatoes • Fresh mozzarella • Basil • Extra virgin olive oil
+                            </p>
+
+                            <div class="card-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                    <span class="review-count">(567)</span>
+                                </div>
+                                <div class="price">
+                                    Starting <strong>$10.99</strong>
+                                </div>
+                            </div>
+
+                            <a href="menu.html" class="btn-primary btn-block">
+                                <i class="fas fa-plus"></i> Add to Cart
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- View Full Menu Button -->
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="menu.html" class="btn-outline btn-lg">
+                        <i class="fas fa-book-open"></i> View Full Menu
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Story -->
+        <section class="brand-story" id="about">
+            <div class="story-bg"></div>
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <span class="story-label">Our Story</span>
+                        <h2 class="story-title">Crafted with Passion<br>Since 1987</h2>
+                        <p class="story-description">
+                            Born in the heart of Chicago, we've been serving authentic thin-crust pizza 
+                            for over three decades. Every pizza starts with our signature dough, 
+                            hand-stretched daily and topped with the finest ingredients sourced from 
+                            local farmers and Italian importers.
+                        </p>
+                        <p class="story-description">
+                            Our wood-fired ovens reach the perfect 800°F, creating that signature 
+                            crispy crust with just the right amount of char. It's not just pizza—it's 
+                            a tradition we're proud to share with you.
+                        </p>
+
+                        <div class="story-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2,500+</span>
+                                <span class="stat-label">Events Catered</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Happy Customers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4.8★</span>
+                                <span class="stat-label">Google Rating</span>
+                            </div>
+                        </div>
+
+                        <div class="awards">
+                            <img src="https://via.placeholder.com/80x80/333/FFF?text=Award" alt="Best Pizza 2023" class="award-badge">
+                            <img src="https://via.placeholder.com/80x80/333/FFF?text=Award" alt="Local Favorite" class="award-badge">
+                            <img src="https://via.placeholder.com/80x80/333/FFF?text=Award" alt="Top Rated" class="award-badge">
+                        </div>
+                    </div>
+
+                    <div class="story-visual">
+                        <div class="story-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=800&fit=crop" 
+                                 alt="Chef preparing fresh pizza in wood-fired oven" 
+                                 class="story-image"
+                                 loading="lazy">
+                            <div class="story-overlay">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Watch Our Story</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catering Section -->
+        <section class="catering-section" id="catering">
+            <div class="container">
+                <div class="catering-content">
+                    <div class="catering-visual">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop" 
+                             alt="Catering setup with multiple pizzas and appetizers" 
+                             loading="lazy">
+                    </div>
+
+                    <div class="catering-info">
+                        <span class="section-label">Catering Services</span>
+                        <h2 class="section-title">Make Your Event<br>Unforgettable</h2>
+                        <p class="section-description">
+                            From corporate lunches to wedding receptions, we bring the authentic 
+                            Chicago pizza experience to your special occasions. Customizable packages 
+                            for groups of 10 to 500+.
+                        </p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Flexible Packages</strong>
+                                    <span>From budget-friendly to premium options</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>On-Site Service</strong>
+                                    <span>Professional staff & equipment included</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Custom Menus</strong>
+                                    <span>Dietary restrictions & preferences accommodated</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Fast Turnaround</strong>
+                                    <span>Book with as little as 48 hours notice</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="button-group">
+                            <a href="catering.html?quote=true" class="btn-primary btn-lg">
+                                <i class="fas fa-calendar-alt"></i> Request Quote
+                            </a>
+                            <a href="catering.html#packages" class="btn-outline btn-lg">
+                                <i class="fas fa-download"></i> View Packages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rewards Section -->
+        <section class="rewards-section" id="rewards">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Join Our Rewards Program</h2>
+                    <p class="section-subtitle">Earn points with every order. Redeem for free pizza & exclusive perks!</p>
+                </div>
+
+                <div class="rewards-grid">
+                    <div class="reward-card">
+                        <div class="reward-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Welcome Bonus</h3>
+                        <p>Get <strong>100 points</strong> just for signing up</p>
+                    </div>
+
+                    <div class="reward-card">
+                        <div class="reward-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Earn Points</h3>
+                        <p><strong>10 points</strong> for every $1 spent</p>
+                    </div>
+
+                    <div class="reward-card">
+                        <div class="reward-icon">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <h3>Free Pizza</h3>
+                        <p>Redeem <strong>500 points</strong> for a free medium pizza</p>
+                    </div>
+
+                    <div class="reward-card">
+                        <div class="reward-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3>Birthday Treat</h3>
+                        <p>Special surprise on your <strong>birthday</strong></p>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 2rem;">
+                    <button class="btn-primary btn-lg" id="joinRewardsBtn">
+                        <i class="fas fa-user-plus"></i> Join Rewards Program
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">What Our Customers Say</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Best pizza in Houston, hands down! The thin crust is perfectly crispy, 
+                            and the ingredients taste so fresh. Old Smokey is my absolute favorite!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/80?img=1" alt="Sarah Martinez" class="author-avatar">
+                            <div>
+                                <strong>Sarah Martinez</strong>
+                                <span>Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Used them for our office party—absolutely phenomenal service! Everyone 
+                            loved the variety, and the catering team was super professional."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/80?img=12" alt="James Chen" class="author-avatar">
+                            <div>
+                                <strong>James Chen</strong>
+                                <span>Yelp Review</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "My family's go-to for Friday nights. The rewards program is great, 
+                            and delivery is always fast. Highly recommend the Margherita!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/80?img=5" alt="Emily Rodriguez" class="author-avatar">
+                            <div>
+                                <strong>Emily Rodriguez</strong>
+                                <span>Facebook Review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span>Chicago <span class="highlight">Pizza</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Authentic Chicago-style thin crust pizza, handcrafted with passion since 1987.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="#rewards">Rewards</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Nutritional Info</a></li>
+                        <li><a href="#">Allergen Guide</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Locations</h4>
+                    <ul class="location-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Alden Bridge</strong>
+                                <span>4775 W Panther Creek Dr</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Rayford</strong>
+                                <span>2890 Rayford Rd</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>The Woodlands</strong>
+                                <span>1255 Lake Woodlands Dr</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Get exclusive deals & updates!</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" 
+                               placeholder="Your email" 
+                               required 
+                               aria-label="Email address for newsletter">
+                        <button type="submit" aria-label="Subscribe to newsletter">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="app-download">
+                        <p style="margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 0.875rem;">Download Our App</p>
+                        <a href="#" class="app-badge">
+                            <i class="fab fa-apple"></i> App Store
+                        </a>
+                        <a href="#" class="app-badge">
+                            <i class="fab fa-google-play"></i> Google Play
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 Chicago Premium Pizza. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Cookie Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Location Modal -->
+    <div class="modal" id="locationModal" role="dialog" aria-labelledby="locationModalTitle" aria-modal="true" aria-hidden="true">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-content">
+            <button class="modal-close" data-close-modal aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 id="locationModalTitle">Select Your Location</h3>
+            <p>Please choose a location to see menu and pricing</p>
+            <div class="location-search">
+                <input type="text" placeholder="Enter ZIP code" aria-label="Enter ZIP code">
+                <button class="btn-primary">Find Location</button>
+            </div>
+            <div class="location-options">
+                <button class="location-option">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Alden Bridge</strong>
+                        <span>2.3 miles away • Open now</span>
+                    </div>
+                </button>
+                <button class="location-option">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Rayford</strong>
+                        <span>4.7 miles away • Open now</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

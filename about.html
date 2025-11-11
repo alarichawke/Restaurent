@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Chicago Pizza's story, values, and commitment to authentic thin crust pizza since 1987">
+    <meta name="theme-color" content="#F15A24">
+    
+    <title>About Us - Chicago Pizza | Our Story Since 1987</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header" role="banner">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main Navigation">
+                <div class="nav__logo">
+                    <a href="index.html" aria-label="Chicago Pizza Home">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span class="logo-text">Chicago <span class="highlight">Pizza</span></span>
+                    </a>
+                </div>
+                
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="menu.html" class="nav__link">Menu</a></li>
+                    <li><a href="index.html#locations" class="nav__link">Locations</a></li>
+                    <li><a href="catering.html" class="nav__link">Catering</a></li>
+                    <li><a href="about.html" class="nav__link active">About</a></li>
+                </ul>
+                
+                <div class="nav__actions">
+                    <button class="btn-secondary" id="signInBtn" aria-label="Sign in to your account">
+                        <i class="fas fa-user"></i> Sign In
+                    </button>
+                    <a href="menu.html" class="btn-primary">
+                        <i class="fas fa-shopping-cart"></i> Order Now
+                    </a>
+                    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="about-hero">
+        <div class="about-hero__bg"></div>
+        <div class="container">
+            <div class="about-hero__content">
+                <span class="hero-label">
+                    <i class="fas fa-star"></i> Since 1987
+                </span>
+                <h1 class="hero-title">Our Story of Passion,<br>Tradition & Great Pizza</h1>
+                <p class="hero-subtitle">
+                    For over 35 years, we've been crafting authentic Chicago-style thin crust pizza that brings people together and creates unforgettable moments.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <div class="stat-number" data-target="500000">0</div>
+                    <div class="stat-label">Pizzas Served</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Locations</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-target="35">0</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-images">
+                    <div class="story-image-main">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=700&fit=crop" 
+                             alt="Chicago Pizza restaurant exterior" 
+                             loading="lazy">
+                    </div>
+                    <div class="story-image-secondary">
+                        <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?w=400&h=300&fit=crop" 
+                             alt="Pizza chef at work" 
+                             loading="lazy">
+                    </div>
+                    <div class="story-badge">
+                        <i class="fas fa-fire"></i>
+                        <div>
+                            <strong>800°F</strong>
+                            <span>Wood-Fired Ovens</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-content">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">A Family Recipe That Started It All</h2>
+                    <p class="story-text">
+                        In 1987, Antonio Rossi brought his family's secret pizza recipe from Chicago to Texas. What started as a small pizzeria with just 8 tables has grown into a beloved local chain serving thousands of customers every week.
+                    </p>
+                    <p class="story-text">
+                        Our commitment has never wavered: use only the freshest ingredients, hand-stretch every dough ball, and bake each pizza to perfection in our signature wood-fired ovens. We're not just making pizza—we're crafting experiences that bring families and friends together.
+                    </p>
+                    <p class="story-text">
+                        Today, we're proud to operate four locations across the Houston area, each maintaining the same dedication to quality and authenticity that Antonio established over three decades ago.
+                    </p>
+                    
+                    <div class="story-signature">
+                        <img src="https://via.placeholder.com/150x50/2c2c2c/fff?text=Antonio+Rossi" alt="Antonio Rossi signature">
+                        <div>
+                            <strong>Antonio Rossi</strong>
+                            <span>Founder & Master Pizza Chef</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Our Journey</span>
+                <h2 class="section-title">35 Years of Pizza Excellence</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1987</div>
+                    <div class="timeline-content">
+                        <h3>The Beginning</h3>
+                        <p>Antonio Rossi opens the first Chicago Pizza in The Woodlands with just 8 tables and a wood-fired oven.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1995</div>
+                    <div class="timeline-content">
+                        <h3>First Expansion</h3>
+                        <p>Opened our second location in Spring, Texas, bringing authentic pizza to more communities.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2003</div>
+                    <div class="timeline-content">
+                        <h3>Award Recognition</h3>
+                        <p>Named "Best Pizza in Houston" by Houston Chronicle readers for the first time.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>Catering Launched</h3>
+                        <p>Started our catering service to bring Chicago Pizza to events across Texas.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h3>Going Digital</h3>
+                        <p>Launched online ordering and delivery service, making it easier than ever to enjoy our pizza.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Today</h3>
+                        <p>Four thriving locations, 500,000+ pizzas served, and still committed to Antonio's original vision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">What We Stand For</span>
+                <h2 class="section-title">Our Core Values</h2>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion for Quality</h3>
+                    <p>Every pizza is crafted with premium ingredients and genuine care. We never compromise on quality.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Community First</h3>
+                    <p>We're proud to be part of the Houston community, supporting local farmers and giving back.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>Committed to eco-friendly practices, from sourcing to packaging, for a better tomorrow.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Excellence Always</h3>
+                    <p>We strive for perfection in every pizza, every order, every time. Your satisfaction is our success.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Spirit</h3>
+                    <p>Our employees are family. We invest in their growth and celebrate their success together.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>While honoring tradition, we embrace new ideas to serve you better every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Meet the Team</span>
+                <h2 class="section-title">The People Behind Your Pizza</h2>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://i.pravatar.cc/400?img=12" alt="Antonio Rossi">
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Antonio Rossi</h3>
+                        <p class="team-role">Founder & CEO</p>
+                        <p class="team-bio">Master pizza chef with 40+ years of experience bringing authentic flavors to Texas.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://i.pravatar.cc/400?img=5" alt="Maria Rossi">
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Maria Rossi</h3>
+                        <p class="team-role">Co-Owner & Director of Operations</p>
+                        <p class="team-bio">Ensures every location maintains our high standards and family atmosphere.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://i.pravatar.cc/400?img=33" alt="Chef Marco">
+                        <div class="team-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Chef Marco DiLuca</h3>
+                        <p class="team-role">Executive Chef</p>
+                        <p class="team-bio">Trained in Naples, Italy, bringing authentic techniques to our kitchen.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://i.pravatar.cc/400?img=27" alt="Sarah Johnson">
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="team-role">Customer Experience Manager</p>
+                        <p class="team-bio">Dedicated to making every customer interaction memorable and delightful.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Commitment -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="quality-grid">
+                <div class="quality-content">
+                    <span class="section-label">Our Commitment</span>
+                    <h2 class="section-title">Quality You Can Taste</h2>
+                    <p class="quality-text">
+                        We believe great pizza starts with great ingredients. That's why we're obsessive about sourcing the best.
+                    </p>
+                    
+                    <div class="quality-features">
+                        <div class="quality-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Fresh Daily Dough</strong>
+                                <span>Hand-stretched every morning using our 35-year-old recipe</span>
+                            </div>
+                        </div>
+                        
+                        <div class="quality-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Premium Ingredients</strong>
+                                <span>Locally sourced produce and imported Italian cheeses</span>
+                            </div>
+                        </div>
+                        
+                        <div class="quality-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Wood-Fired Perfection</strong>
+                                <span>Baked at 800°F for that signature crispy crust</span>
+                            </div>
+                        </div>
+                        
+                        <div class="quality-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>No Compromises</strong>
+                                <span>Zero artificial flavors, colors, or preservatives</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quality-images">
+                    <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=600&h=700&fit=crop" 
+                         alt="Fresh pizza ingredients" 
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Recognition</span>
+                <h2 class="section-title">Awards & Achievements</h2>
+            </div>
+            
+            <div class="awards-grid">
+                <div class="award-card">
+                    <i class="fas fa-trophy"></i>
+                    <h4>Best Pizza in Houston</h4>
+                    <p>Houston Chronicle</p>
+                    <span class="award-year">2020, 2021, 2022, 2023</span>
+                </div>
+                
+                <div class="award-card">
+                    <i class="fas fa-medal"></i>
+                    <h4>Readers' Choice Gold</h4>
+                    <p>Texas Monthly</p>
+                    <span class="award-year">2019</span>
+                </div>
+                
+                <div class="award-card">
+                    <i class="fas fa-star"></i>
+                    <h4>Top 50 Pizzerias</h4>
+                    <p>Pizza Today Magazine</p>
+                    <span class="award-year">2021</span>
+                </div>
+                
+                <div class="award-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>Community Hero Award</h4>
+                    <p>The Woodlands Chamber</p>
+                    <span class="award-year">2022</span>
+                </div>
+                
+                <div class="award-card">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Green Business Certified</h4>
+                    <p>Texas Environmental Agency</p>
+                    <span class="award-year">2023</span>
+                </div>
+                
+                <div class="award-card">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Best Catering Service</h4>
+                    <p>Houston Events Awards</p>
+                    <span class="award-year">2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Taste the Difference?</h2>
+                <p>Join thousands of satisfied customers who choose Chicago Pizza for authentic quality</p>
+                <div class="cta-buttons">
+                    <a href="menu.html" class="btn-primary btn-lg">
+                        <i class="fas fa-pizza-slice"></i> Order Now
+                    </a>
+                    <a href="index.html#locations" class="btn-outline btn-lg">
+                        <i class="fas fa-map-marker-alt"></i> Find Location
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span>Chicago <span class="highlight">Pizza</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Authentic Chicago-style thin crust pizza, handcrafted with passion since 1987.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html#locations">Locations</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="location-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <a href="tel:+12815551234">(281) 555-1234</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:info@chicagopizza.com">info@chicagopizza.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 Chicago Premium Pizza. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+</html>

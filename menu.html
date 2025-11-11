@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order delicious Chicago-style pizza online. Customize your pizza with premium toppings and get it delivered fresh to your door.">
+    <meta name="theme-color" content="#F15A24">
+    
+
+    <meta property="og:title" content="Menu - Chicago Pizza | Order Online">
+    <meta property="og:description" content="Browse our menu and build your perfect pizza">
+    <meta property="og:type" content="website">
+    
+    <title>Menu - Chicago Pizza | Order Your Perfect Pizza Online</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+
+    <header class="header" id="header" role="banner">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main Navigation">
+                <div class="nav__logo">
+                    <a href="index.html" aria-label="Chicago Pizza Home">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span class="logo-text">Chicago <span class="highlight">Pizza</span></span>
+                    </a>
+                </div>
+                
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="#menu" class="nav__link active">Menu</a></li>
+                    <li><a href="index.html#locations" class="nav__link">Locations</a></li>
+                    <li><a href="index.html#catering" class="nav__link">Catering</a></li>
+                    <li><a href="index.html#rewards" class="nav__link">
+                        <i class="fas fa-gift"></i> Rewards
+                    </a></li>
+                </ul>
+                
+                <div class="nav__actions">
+                    <button class="btn-secondary" id="signInBtn" aria-label="Sign in to your account">
+                        <i class="fas fa-user"></i> Sign In
+                    </button>
+                    <button class="btn-primary cart-trigger" id="viewCartBtn" aria-label="View shopping cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </button>
+                    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="page-header">
+        <div class="page-header__bg"></div>
+        <div class="container">
+            <div class="page-header__content">
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Menu</span>
+                </nav>
+                <h1 class="page-title">Our Menu</h1>
+                <p class="page-subtitle">Handcrafted pizzas made with premium ingredients</p>
+                
+                <div class="location-badge" id="locationBadge">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Delivering to <strong>Alden Bridge</strong></span>
+                    <button class="change-location" aria-label="Change delivery location">Change</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main id="main-content">
+        <section class="offers-banner">
+            <div class="container">
+                <div class="offers-slider" id="offersSlider">
+                    <div class="offer-card">
+                        <div class="offer-icon">🔥</div>
+                        <div class="offer-content">
+                            <h3>Buy 1 Get 1 Free</h3>
+                            <p>On all large pizzas • Valid till Sunday</p>
+                        </div>
+                        <button class="btn-primary btn-sm">Order Now</button>
+                    </div>
+                    
+                    <div class="offer-card">
+                        <div class="offer-icon">🎉</div>
+                        <div class="offer-content">
+                            <h3>Family Combo - $39.99</h3>
+                            <p>2 Medium Pizzas + Garlic Bread + 2L Coke</p>
+                        </div>
+                        <button class="btn-primary btn-sm">Order Now</button>
+                    </div>
+                    
+                    <div class="offer-card">
+                        <div class="offer-icon">⚡</div>
+                        <div class="offer-content">
+                            <h3>Free Delivery</h3>
+                            <p>On orders above $25 • No code needed</p>
+                        </div>
+                        <button class="btn-primary btn-sm">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="menu-section" id="menu">
+            <div class="container">
+               
+                <div class="menu-controls">
+                    <div class="search-filter">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" 
+                                   id="menuSearch" 
+                                   placeholder="Search pizzas, toppings..." 
+                                   aria-label="Search menu items">
+                        </div>
+                        
+                        <div class="filter-group">
+                            <button class="filter-btn" id="filterBtn" aria-label="Open filters">
+                                <i class="fas fa-sliders-h"></i> Filters
+                            </button>
+                            
+                            <div class="sort-dropdown">
+                                <select id="sortMenu" aria-label="Sort menu items">
+                                    <option value="popular">Most Popular</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="rating">Highest Rated</option>
+                                    <option value="name">Name: A-Z</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                 
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="all">
+                            <i class="fas fa-pizza-slice"></i>
+                            <span>All Items</span>
+                        </button>
+                        <button class="category-tab" data-category="signature">
+                            <i class="fas fa-star"></i>
+                            <span>Signature</span>
+                        </button>
+                        <button class="category-tab" data-category="vegetarian">
+                            <i class="fas fa-leaf"></i>
+                            <span>Vegetarian</span>
+                        </button>
+                        <button class="category-tab" data-category="spicy">
+                            <i class="fas fa-pepper-hot"></i>
+                            <span>Spicy</span>
+                        </button>
+                        <button class="category-tab" data-category="build">
+                            <i class="fas fa-hammer"></i>
+                            <span>Build Your Own</span>
+                        </button>
+                        <button class="category-tab" data-category="sides">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <span>Sides</span>
+                        </button>
+                        <button class="category-tab" data-category="drinks">
+                            <i class="fas fa-glass-whiskey"></i>
+                            <span>Drinks</span>
+                        </button>
+                        <button class="category-tab" data-category="desserts">
+                            <i class="fas fa-ice-cream"></i>
+                            <span>Desserts</span>
+                        </button>
+                    </div>
+                </div>
+
+               
+                <div class="active-filters" id="activeFilters" style="display: none;">
+                    <span class="filter-label">Active Filters:</span>
+                    <div class="filter-tags" id="filterTags"></div>
+                    <button class="clear-filters" id="clearFilters">
+                        <i class="fas fa-times"></i> Clear All
+                    </button>
+                </div>
+
+            
+                <div class="menu-grid" id="menuGrid">
+                  
+                    <article class="pizza-card" data-category="signature vegetarian" data-price="11.99" data-rating="4.9" data-name="The Blanco">
+                        <div class="pizza-card__badges">
+                            <span class="badge badge-popular">
+                                <i class="fas fa-fire"></i> Popular
+                            </span>
+                            <span class="badge badge-veg">
+                                <i class="fas fa-leaf"></i> Veg
+                            </span>
+                        </div>
+                        
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop" 
+                                 alt="The Blanco - White pizza with ricotta, garlic and basil" 
+                                 loading="lazy">
+                            <button class="quick-view-btn" data-pizza="blanco" aria-label="Quick view The Blanco">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">The Blanco</h3>
+                                <button class="favorite-btn" aria-label="Add to favorites">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                Creamy ricotta • Roasted garlic • Fresh basil • Olive oil drizzle
+                            </p>
+                            
+                            <div class="pizza-card__meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                    <span class="review-count">(234)</span>
+                                </div>
+                                <div class="prep-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>20-25 min</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-label">From</span>
+                                    <span class="price-amount">$11.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="blanco" data-pizza-name="The Blanco" data-base-price="11.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                
+                    <article class="pizza-card" data-category="signature" data-price="13.99" data-rating="4.7" data-name="Tuscany">
+                        <div class="pizza-card__badges">
+                            <span class="badge badge-new">
+                                <i class="fas fa-sparkles"></i> New
+                            </span>
+                        </div>
+                        
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop" 
+                                 alt="Tuscany - Italian sausage with peppers and onions" 
+                                 loading="lazy">
+                            <button class="quick-view-btn" data-pizza="tuscany" aria-label="Quick view Tuscany">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">Tuscany</h3>
+                                <button class="favorite-btn" aria-label="Add to favorites">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                Italian sausage • Bell peppers • Caramelized onions • Mozzarella
+                            </p>
+                            
+                            <div class="pizza-card__meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                    <span class="review-count">(189)</span>
+                                </div>
+                                <div class="prep-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>25-30 min</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-label">From</span>
+                                    <span class="price-amount">$13.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="tuscany" data-pizza-name="Tuscany" data-base-price="13.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                   
+                    <article class="pizza-card" data-category="signature spicy" data-price="14.99" data-rating="4.8" data-name="The Jerk">
+                        <div class="pizza-card__badges">
+                            <span class="badge badge-spicy">
+                                <i class="fas fa-fire"></i> Spicy
+                            </span>
+                            <span class="badge badge-popular">Popular</span>
+                        </div>
+                        
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&h=400&fit=crop" 
+                                 alt="The Jerk - Spicy jerk chicken pizza" 
+                                 loading="lazy">
+                            <button class="quick-view-btn" data-pizza="jerk" aria-label="Quick view The Jerk">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">The Jerk</h3>
+                                <button class="favorite-btn" aria-label="Add to favorites">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                Jerk chicken • Jalapeños • Red onions • Cilantro • Hot sauce
+                            </p>
+                            
+                            <div class="pizza-card__meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                    <span class="review-count">(312)</span>
+                                </div>
+                                <div class="prep-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>20-25 min</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-label">From</span>
+                                    <span class="price-amount">$14.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="jerk" data-pizza-name="The Jerk" data-base-price="14.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+              
+                    <article class="pizza-card" data-category="signature" data-price="13.99" data-rating="4.9" data-name="Old Smokey">
+                        <div class="pizza-card__badges">
+                            <span class="badge badge-chef">
+                                <i class="fas fa-award"></i> Chef's Choice
+                            </span>
+                        </div>
+                        
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=600&h=400&fit=crop" 
+                                 alt="Old Smokey - BBQ chicken pizza" 
+                                 loading="lazy">
+                            <button class="quick-view-btn" data-pizza="smokey" aria-label="Quick view Old Smokey">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">Old Smokey</h3>
+                                <button class="favorite-btn" aria-label="Add to favorites">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                BBQ chicken • Smoked gouda • Red onions • Cilantro • BBQ drizzle
+                            </p>
+                            
+                            <div class="pizza-card__meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                    <span class="review-count">(401)</span>
+                                </div>
+                                <div class="prep-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>20-25 min</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-label">From</span>
+                                    <span class="price-amount">$13.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="smokey" data-pizza-name="Old Smokey" data-base-price="13.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+                    <article class="pizza-card" data-category="vegetarian" data-price="10.99" data-rating="4.8" data-name="Margherita">
+                        <div class="pizza-card__badges">
+                            <span class="badge badge-veg">
+                                <i class="fas fa-leaf"></i> Veg
+                            </span>
+                        </div>
+                        
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=600&h=400&fit=crop" 
+                                 alt="Margherita - Classic tomato and mozzarella" 
+                                 loading="lazy">
+                            <button class="quick-view-btn" data-pizza="margherita" aria-label="Quick view Margherita">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">Margherita</h3>
+                                <button class="favorite-btn" aria-label="Add to favorites">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                San Marzano tomatoes • Fresh mozzarella • Basil • Extra virgin olive oil
+                            </p>
+                            
+                            <div class="pizza-card__meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                    <span class="review-count">(567)</span>
+                                </div>
+                                <div class="prep-time">
+                                    <i class="far fa-clock"></i>
+                                    <span>15-20 min</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-label">From</span>
+                                    <span class="price-amount">$10.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="margherita" data-pizza-name="Margherita" data-base-price="10.99">
+                                    <i class="fas fa-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+  
+                    <article class="pizza-card build-card" data-category="build">
+                        <div class="build-card__content">
+                            <div class="build-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h3 class="build-title">Build Your Own Pizza</h3>
+                            <p class="build-description">
+                                Choose from 20+ premium toppings and create your perfect pizza
+                            </p>
+                            <ul class="build-features">
+                                <li><i class="fas fa-check"></i> Fresh dough made daily</li>
+                                <li><i class="fas fa-check"></i> Unlimited toppings</li>
+                                <li><i class="fas fa-check"></i> 4 cheese options</li>
+                                <li><i class="fas fa-check"></i> Gluten-free available</li>
+                            </ul>
+                            <button class="btn-primary btn-block" id="openBuilderBtn">
+                                <i class="fas fa-hammer"></i> Start Building
+                            </button>
+                        </div>
+                    </article>
+
+
+                    <article class="pizza-card" data-category="sides" data-price="5.99" data-rating="4.6" data-name="Garlic Bread">
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1573140401552-3fab0b24f4e4?w=600&h=400&fit=crop" 
+                                 alt="Garlic Bread with herbs" 
+                                 loading="lazy">
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">Garlic Bread</h3>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                Freshly baked bread with garlic butter and herbs
+                            </p>
+                            
+                            <div class="pizza-card__meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                    <span class="review-count">(145)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-amount">$5.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="garlic-bread" data-pizza-name="Garlic Bread" data-base-price="5.99">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="pizza-card" data-category="sides" data-price="8.99" data-rating="4.7" data-name="Buffalo Wings">
+                        <div class="pizza-card__badges">
+                            <span class="badge badge-spicy">
+                                <i class="fas fa-fire"></i> Spicy
+                            </span>
+                        </div>
+                        
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=600&h=400&fit=crop" 
+                                 alt="Buffalo Wings" 
+                                 loading="lazy">
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">Buffalo Wings</h3>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                8 pieces of crispy wings tossed in buffalo sauce
+                            </p>
+                            
+                            <div class="pizza-card__meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                    <span class="review-count">(203)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-amount">$8.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="wings" data-pizza-name="Buffalo Wings" data-base-price="8.99">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="pizza-card" data-category="drinks" data-price="2.99" data-rating="4.5" data-name="Soft Drink">
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=600&h=400&fit=crop" 
+                                 alt="Soft Drinks" 
+                                 loading="lazy">
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">Soft Drink (2L)</h3>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                Coke, Sprite, Fanta - Choose your favorite
+                            </p>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-amount">$2.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="drink" data-pizza-name="Soft Drink" data-base-price="2.99">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="pizza-card" data-category="desserts" data-price="6.99" data-rating="4.8" data-name="Chocolate Lava Cake">
+                        <div class="pizza-card__image">
+                            <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600&h=400&fit=crop" 
+                                 alt="Chocolate Lava Cake" 
+                                 loading="lazy">
+                        </div>
+                        
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__title">Chocolate Lava Cake</h3>
+                            </div>
+                            
+                            <p class="pizza-card__description">
+                                Warm chocolate cake with molten center
+                            </p>
+                            
+                            <div class="pizza-card__meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                    <span class="review-count">(178)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pizza-card__footer">
+                                <div class="price-display">
+                                    <span class="price-amount">$6.99</span>
+                                </div>
+                                <button class="btn-add-cart" data-pizza-id="lava-cake" data-pizza-name="Chocolate Lava Cake" data-base-price="6.99">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="empty-state" id="emptyState" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No items found</h3>
+                    <p>Try adjusting your search or filters</p>
+                    <button class="btn-primary" id="resetSearch">Clear Search</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="modal modal-fullscreen" id="builderModal" role="dialog" aria-labelledby="builderTitle" aria-hidden="true">
+        <div class="modal-overlay" data-close-builder></div>
+        <div class="modal-content builder-content">
+            <button class="modal-close" data-close-builder aria-label="Close pizza builder">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="builder-container">
+
+                <div class="builder-header">
+                    <h2 id="builderTitle">Build Your Perfect Pizza</h2>
+                    <div class="builder-steps">
+                        <div class="step active" data-step="1">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Size</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Crust</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <span class="step-number">3</span>
+                            <span class="step-label">Sauce</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <span class="step-number">4</span>
+                            <span class="step-label">Toppings</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="builder-body">
+
+                    <div class="builder-step active" data-step-content="1">
+                        <h3>Choose Your Size</h3>
+                        <div class="size-options">
+                            <label class="size-option-card">
+                                <input type="radio" name="pizza-size" value="small" data-price="9.99">
+                                <div class="option-card">
+                                    <div class="option-icon">🍕</div>
+                                    <div class="option-name">Small</div>
+                                    <div class="option-detail">10" • 4 slices</div>
+                                    <div class="option-price">$9.99</div>
+                                </div>
+                            </label>
+                            
+                            <label class="size-option-card">
+                                <input type="radio" name="pizza-size" value="medium" data-price="12.99" checked>
+                                <div class="option-card">
+                                    <div class="option-icon">🍕</div>
+                                    <div class="option-name">Medium</div>
+                                    <div class="option-detail">12" • 6 slices</div>
+                                    <div class="option-price">$12.99</div>
+                                    <span class="popular-badge">Most Popular</span>
+                                </div>
+                            </label>
+                            
+                            <label class="size-option-card">
+                                <input type="radio" name="pizza-size" value="large" data-price="15.99">
+                                <div class="option-card">
+                                    <div class="option-icon">🍕</div>
+                                    <div class="option-name">Large</div>
+                                    <div class="option-detail">14" • 8 slices</div>
+                                    <div class="option-price">$15.99</div>
+                                </div>
+                            </label>
+                            
+                            <label class="size-option-card">
+                                <input type="radio" name="pizza-size" value="xlarge" data-price="18.99">
+                                <div class="option-card">
+                                    <div class="option-icon">🍕</div>
+                                    <div class="option-name">X-Large</div>
+                                    <div class="option-detail">16" • 10 slices</div>
+                                    <div class="option-price">$18.99</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="builder-step" data-step-content="2">
+                        <h3>Choose Your Crust</h3>
+                        <div class="crust-options">
+                            <label class="crust-option-card">
+                                <input type="radio" name="pizza-crust" value="thin" data-price="0" checked>
+                                <div class="option-card">
+                                    <div class="option-name">Thin Crust</div>
+                                    <div class="option-detail">Crispy & light</div>
+                                    <div class="option-price">Included</div>
+                                </div>
+                            </label>
+                            
+                            <label class="crust-option-card">
+                                <input type="radio" name="pizza-crust" value="regular" data-price="0">
+                                <div class="option-card">
+                                    <div class="option-name">Regular Crust</div>
+                                    <div class="option-detail">Classic hand-tossed</div>
+                                    <div class="option-price">Included</div>
+                                </div>
+                            </label>
+                            
+                            <label class="crust-option-card">
+                                <input type="radio" name="pizza-crust" value="thick" data-price="1.50">
+                                <div class="option-card">
+                                    <div class="option-name">Thick Crust</div>
+                                    <div class="option-detail">Soft & fluffy</div>
+                                    <div class="option-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="crust-option-card">
+                                <input type="radio" name="pizza-crust" value="stuffed" data-price="2.99">
+                                <div class="option-card">
+                                    <div class="option-name">Stuffed Crust</div>
+                                    <div class="option-detail">Cheese-filled edge</div>
+                                    <div class="option-price">+$2.99</div>
+                                </div>
+                            </label>
+                            
+                            <label class="crust-option-card">
+                                <input type="radio" name="pizza-crust" value="gluten-free" data-price="3.99">
+                                <div class="option-card">
+                                    <div class="option-name">Gluten-Free</div>
+                                    <div class="option-detail">Cauliflower base</div>
+                                    <div class="option-price">+$3.99</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="builder-step" data-step-content="3">
+                        <h3>Choose Your Sauce</h3>
+                        <div class="sauce-options">
+                            <label class="sauce-option-card">
+                                <input type="radio" name="pizza-sauce" value="marinara" data-price="0" checked>
+                                <div class="option-card">
+                                    <div class="option-name">Marinara</div>
+                                    <div class="option-detail">Classic tomato sauce</div>
+                                    <div class="option-price">Included</div>
+                                </div>
+                            </label>
+                            
+                            <label class="sauce-option-card">
+                                <input type="radio" name="pizza-sauce" value="white" data-price="0">
+                                <div class="option-card">
+                                    <div class="option-name">White Sauce</div>
+                                    <div class="option-detail">Creamy garlic alfredo</div>
+                                    <div class="option-price">Included</div>
+                                </div>
+                            </label>
+                            
+                            <label class="sauce-option-card">
+                                <input type="radio" name="pizza-sauce" value="bbq" data-price="0">
+                                <div class="option-card">
+                                    <div class="option-name">BBQ Sauce</div>
+                                    <div class="option-detail">Sweet & smoky</div>
+                                    <div class="option-price">Included</div>
+                                </div>
+                            </label>
+                            
+                            <label class="sauce-option-card">
+                                <input type="radio" name="pizza-sauce" value="pesto" data-price="1.50">
+                                <div class="option-card">
+                                    <div class="option-name">Pesto</div>
+                                    <div class="option-detail">Fresh basil pesto</div>
+                                    <div class="option-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="sauce-option-card">
+                                <input type="radio" name="pizza-sauce" value="buffalo" data-price="0">
+                                <div class="option-card">
+                                    <div class="option-name">Buffalo Sauce</div>
+                                    <div class="option-detail">Spicy buffalo</div>
+                                    <div class="option-price">Included</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="builder-step" data-step-content="4">
+                        <h3>Choose Your Toppings</h3>
+                        <p class="topping-note">Select as many as you like • $1.50 each</p>
+                        
+                        <div class="topping-categories">
+                            <button class="topping-category-btn active" data-topping-cat="all">All</button>
+                            <button class="topping-category-btn" data-topping-cat="meats">Meats</button>
+                            <button class="topping-category-btn" data-topping-cat="veggies">Veggies</button>
+                            <button class="topping-category-btn" data-topping-cat="cheese">Cheese</button>
+                        </div>
+                        
+                        <div class="toppings-grid">
+
+                            <label class="topping-card" data-topping-type="meats">
+                                <input type="checkbox" name="toppings" value="pepperoni" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🍖</div>
+                                    <div class="topping-name">Pepperoni</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="meats">
+                                <input type="checkbox" name="toppings" value="sausage" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🌭</div>
+                                    <div class="topping-name">Sausage</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="meats">
+                                <input type="checkbox" name="toppings" value="bacon" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🥓</div>
+                                    <div class="topping-name">Bacon</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="meats">
+                                <input type="checkbox" name="toppings" value="chicken" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🍗</div>
+                                    <div class="topping-name">Chicken</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="meats">
+                                <input type="checkbox" name="toppings" value="ham" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🍖</div>
+                                    <div class="topping-name">Ham</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+
+                            <label class="topping-card" data-topping-type="veggies">
+                                <input type="checkbox" name="toppings" value="mushrooms" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🍄</div>
+                                    <div class="topping-name">Mushrooms</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="veggies">
+                                <input type="checkbox" name="toppings" value="peppers" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🫑</div>
+                                    <div class="topping-name">Bell Peppers</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="veggies">
+                                <input type="checkbox" name="toppings" value="onions" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🧅</div>
+                                    <div class="topping-name">Onions</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="veggies">
+                                <input type="checkbox" name="toppings" value="olives" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🫒</div>
+                                    <div class="topping-name">Black Olives</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="veggies">
+                                <input type="checkbox" name="toppings" value="tomatoes" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🍅</div>
+                                    <div class="topping-name">Tomatoes</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="veggies">
+                                <input type="checkbox" name="toppings" value="spinach" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🥬</div>
+                                    <div class="topping-name">Spinach</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="veggies">
+                                <input type="checkbox" name="toppings" value="jalapenos" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🌶️</div>
+                                    <div class="topping-name">Jalapeños</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="veggies">
+                                <input type="checkbox" name="toppings" value="pineapple" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🍍</div>
+                                    <div class="topping-name">Pineapple</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+
+                            <label class="topping-card" data-topping-type="cheese">
+                                <input type="checkbox" name="toppings" value="extra-cheese" data-price="2.00">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🧀</div>
+                                    <div class="topping-name">Extra Cheese</div>
+                                    <div class="topping-price">+$2.00</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="cheese">
+                                <input type="checkbox" name="toppings" value="feta" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🧀</div>
+                                    <div class="topping-name">Feta</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="cheese">
+                                <input type="checkbox" name="toppings" value="parmesan" data-price="1.50">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🧀</div>
+                                    <div class="topping-name">Parmesan</div>
+                                    <div class="topping-price">+$1.50</div>
+                                </div>
+                            </label>
+                            
+                            <label class="topping-card" data-topping-type="cheese">
+                                <input type="checkbox" name="toppings" value="goat-cheese" data-price="2.00">
+                                <div class="topping-content">
+                                    <div class="topping-icon">🧀</div>
+                                    <div class="topping-name">Goat Cheese</div>
+                                    <div class="topping-price">+$2.00</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="builder-footer">
+                    <div class="price-summary">
+                        <div class="price-breakdown">
+                            <span class="price-label">Total:</span>
+                            <span class="price-amount" id="builderTotal">$12.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="builder-actions">
+                        <button class="btn-secondary" id="builderPrevBtn" style="display: none;">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button class="btn-primary" id="builderNextBtn">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn-primary" id="builderAddToCartBtn" style="display: none;">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" id="closeCartBtn" aria-label="Close cart">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+        
+        <div class="cart-body" id="cartBody">
+            <div class="empty-cart" id="emptyCart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <small>Add some delicious pizzas!</small>
+            </div>
+            
+            <div class="cart-items" id="cartItems" style="display: none;">
+
+            </div>
+        </div>
+        
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span id="cartDeliveryFee">$3.99</span>
+                </div>
+                <div class="summary-row summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+            </div><a href="checkout.html"
+            <button class="btn-primary btn-block btn-lg">
+                Proceed to Checkout <i class="fas fa-arrow-right"></i>
+            </button></a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="modal" id="locationModal" role="dialog" aria-labelledby="locationModalTitle" aria-modal="true" aria-hidden="true">
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-content">
+            <button class="modal-close" data-close-modal aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <h3 id="locationModalTitle">Select Your Location</h3>
+            <p style="color: var(--gray-dark); margin-bottom: var(--space-6);">
+                Choose your nearest location to see accurate pricing and delivery times
+            </p>
+            
+            <div class="location-search" style="margin-bottom: var(--space-6);">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" 
+                           id="locationSearchInput"
+                           placeholder="Enter ZIP code or address" 
+                           aria-label="Enter ZIP code">
+                </div>
+                <button class="btn-secondary detect-location" id="detectLocationModal">
+                    <i class="fas fa-location-crosshairs"></i> Use My Location
+                </button>
+            </div>
+            
+            <div class="location-options">
+                <button class="location-option" data-location="alden">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Alden Bridge</strong>
+                        <span>4775 W Panther Creek Dr • 2.3 miles away</span>
+                        <span class="location-status" style="color: var(--basil-green); font-size: var(--text-xs); display: block; margin-top: var(--space-1);">
+                            <i class="fas fa-circle" style="font-size: 6px;"></i> Open now • Delivery: 25-30 min
+                        </span>
+                    </div>
+                </button>
+                
+                <button class="location-option" data-location="rayford">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Rayford</strong>
+                        <span>2890 Rayford Rd • 4.7 miles away</span>
+                        <span class="location-status" style="color: var(--basil-green); font-size: var(--text-xs); display: block; margin-top: var(--space-1);">
+                            <i class="fas fa-circle" style="font-size: 6px;"></i> Open now • Delivery: 30-35 min
+                        </span>
+                    </div>
+                </button>
+                
+                <button class="location-option" data-location="woodlands">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>The Woodlands</strong>
+                        <span>1255 Lake Woodlands Dr • 6.1 miles away</span>
+                        <span class="location-status" style="color: var(--tomato-red); font-size: var(--text-xs); display: block; margin-top: var(--space-1);">
+                            <i class="fas fa-circle" style="font-size: 6px;"></i> Closed • Opens at 11:00 AM
+                        </span>
+                    </div>
+                </button>
+                
+                <button class="location-option" data-location="spring">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Spring</strong>
+                        <span>25134 Interstate 45 N • 8.2 miles away</span>
+                        <span class="location-status" style="color: var(--basil-green); font-size: var(--text-xs); display: block; margin-top: var(--space-1);">
+                            <i class="fas fa-circle" style="font-size: 6px;"></i> Open now • Delivery: 35-40 min
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span>Chicago <span class="highlight">Pizza</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Authentic Chicago-style thin crust pizza, handcrafted with passion since 1987.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="index.html#locations">Locations</a></li>
+                        <li><a href="index.html#catering">Catering</a></li>
+                        <li><a href="index.html#rewards">Rewards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Nutritional Info</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="location-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <a href="tel:+12815551234">(281) 555-1234</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:info@chicagopizza.com">info@chicagopizza.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 Chicago Premium Pizza. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>

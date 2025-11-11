@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional catering services for all occasions. Fresh pizzas, appetizers, and more. Book your event today!">
+    <meta name="theme-color" content="#F15A24">
+    
+    <title>Catering Services - Chicago Pizza | Events, Parties & Corporate</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/catering.css">
+</head>
+<body>
+
+    <header class="header" id="header" role="banner">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main Navigation">
+                <div class="nav__logo">
+                    <a href="index.html" aria-label="Chicago Pizza Home">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span class="logo-text">Chicago <span class="highlight">Pizza</span></span>
+                    </a>
+                </div>
+                
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="menu.html" class="nav__link">Menu</a></li>
+                    <li><a href="index.html#locations" class="nav__link">Locations</a></li>
+                    <li><a href="catering.html" class="nav__link active">Catering</a></li>
+                    <li><a href="index.html#rewards" class="nav__link">
+                        <i class="fas fa-gift"></i> Rewards
+                    </a></li>
+                </ul>
+                
+                <div class="nav__actions">
+                    <button class="btn-secondary" id="signInBtn" aria-label="Sign in to your account">
+                        <i class="fas fa-user"></i> Sign In
+                    </button>
+                    <a href="menu.html" class="btn-primary">
+                        <i class="fas fa-shopping-cart"></i> Order Now
+                    </a>
+                    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="catering-hero">
+        <div class="catering-hero__bg"></div>
+        <div class="container">
+            <div class="catering-hero__content">
+                <span class="hero-badge">
+                    <i class="fas fa-utensils"></i> Professional Catering Services
+                </span>
+                <h1 class="hero-title">Make Your Event Unforgettable</h1>
+                <p class="hero-subtitle">
+                    From intimate gatherings to grand celebrations, we bring authentic Chicago-style pizza and exceptional service to your special occasions.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <strong>10-500+</strong>
+                            <span>Guests</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <strong>2,500+</strong>
+                            <span>Events Catered</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <strong>4.9/5</strong>
+                            <span>Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <button class="btn-primary btn-lg" id="requestQuoteBtn">
+                        <i class="fas fa-file-invoice"></i> Request Quote
+                    </button>
+                    <button class="btn-outline btn-lg" id="viewPackagesBtn">
+                        <i class="fas fa-box-open"></i> View Packages
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="event-types">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Perfect For Any Occasion</span>
+                <h2 class="section-title">Events We Cater</h2>
+            </div>
+            
+            <div class="event-grid">
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Meetings, conferences, team building events, and office parties</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Professional service</li>
+                        <li><i class="fas fa-check"></i> On-time delivery</li>
+                        <li><i class="fas fa-check"></i> Corporate invoicing</li>
+                    </ul>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Weddings</h3>
+                    <p>Rehearsal dinners, receptions, and bridal showers</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Custom menus</li>
+                        <li><i class="fas fa-check"></i> Elegant presentation</li>
+                        <li><i class="fas fa-check"></i> Full-service options</li>
+                    </ul>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Birthday Parties</h3>
+                    <p>Kids parties, milestone birthdays, and celebrations</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Fun setup</li>
+                        <li><i class="fas fa-check"></i> Kid-friendly options</li>
+                        <li><i class="fas fa-check"></i> Party packages</li>
+                    </ul>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>School Events</h3>
+                    <p>Graduations, fundraisers, sports events, and field trips</p>
+                    <ul class="event-features">
+                        <li><i class="fas fa-check"></i> Budget-friendly</li>
+                        <li><i class="fas fa-check"></i> Large groups</li>
+                        <li><i class="fas fa-check"></i> Easy ordering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="catering-packages" id="packages">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Choose Your Package</span>
+                <h2 class="section-title">Catering Packages</h2>
+                <p class="section-subtitle">All packages include fresh ingredients, professional setup, and our signature service</p>
+            </div>
+            
+            <div class="packages-grid">
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">Basic</h3>
+                        <div class="package-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">$12.99</span>
+                            <span class="price-per">per person</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <p class="package-description">Perfect for casual gatherings and small events</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 2 Pizza varieties</li>
+                            <li><i class="fas fa-check"></i> Garden salad</li>
+                            <li><i class="fas fa-check"></i> Soft drinks</li>
+                            <li><i class="fas fa-check"></i> Plates & napkins</li>
+                            <li><i class="fas fa-check"></i> Self-serve setup</li>
+                        </ul>
+                        <div class="package-info">
+                            <i class="fas fa-users"></i> Minimum 10 guests
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <button class="btn-outline btn-block" data-package="basic">
+                            Select Package
+                        </button>
+                    </div>
+                </div>
+                
+
+                <div class="package-card package-popular">
+                    <div class="package-badge">
+                        <i class="fas fa-star"></i> Most Popular
+                    </div>
+                    <div class="package-header">
+                        <h3 class="package-name">Deluxe</h3>
+                        <div class="package-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">$18.99</span>
+                            <span class="price-per">per person</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <p class="package-description">Our most popular choice for all occasions</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 3 Pizza varieties</li>
+                            <li><i class="fas fa-check"></i> Caesar salad</li>
+                            <li><i class="fas fa-check"></i> Garlic breadsticks</li>
+                            <li><i class="fas fa-check"></i> Wings (choice of flavor)</li>
+                            <li><i class="fas fa-check"></i> Soft drinks & water</li>
+                            <li><i class="fas fa-check"></i> Full setup & cleanup</li>
+                            <li><i class="fas fa-check"></i> Serving utensils</li>
+                        </ul>
+                        <div class="package-info">
+                            <i class="fas fa-users"></i> Minimum 15 guests
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <button class="btn-primary btn-block" data-package="deluxe">
+                            Select Package
+                        </button>
+                    </div>
+                </div>
+                
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">Premium</h3>
+                        <div class="package-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">$24.99</span>
+                            <span class="price-per">per person</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <p class="package-description">Premium experience for special celebrations</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 4 Pizza varieties (specialty)</li>
+                            <li><i class="fas fa-check"></i> Gourmet salad bar</li>
+                            <li><i class="fas fa-check"></i> Garlic breadsticks & bruschetta</li>
+                            <li><i class="fas fa-check"></i> Wings & mozzarella sticks</li>
+                            <li><i class="fas fa-check"></i> Dessert platter</li>
+                            <li><i class="fas fa-check"></i> Premium beverages</li>
+                            <li><i class="fas fa-check"></i> Dedicated staff</li>
+                            <li><i class="fas fa-check"></i> Elegant presentation</li>
+                            <li><i class="fas fa-check"></i> Full service & cleanup</li>
+                        </ul>
+                        <div class="package-info">
+                            <i class="fas fa-users"></i> Minimum 25 guests
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <button class="btn-outline btn-block" data-package="premium">
+                            Select Package
+                        </button>
+                    </div>
+                </div>
+                
+
+                <div class="package-card package-custom">
+                    <div class="package-header">
+                        <h3 class="package-name">Custom</h3>
+                        <div class="package-price">
+                            <span class="price-amount">Let's Talk</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <p class="package-description">Build your perfect menu with our team</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Fully customizable menu</li>
+                            <li><i class="fas fa-check"></i> Dietary accommodations</li>
+                            <li><i class="fas fa-check"></i> Special requests</li>
+                            <li><i class="fas fa-check"></i> Themed setups</li>
+                            <li><i class="fas fa-check"></i> A la carte options</li>
+                            <li><i class="fas fa-check"></i> Bar service available</li>
+                            <li><i class="fas fa-check"></i> Event planning support</li>
+                        </ul>
+                        <div class="package-info">
+                            <i class="fas fa-users"></i> Any size event
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <button class="btn-primary btn-block" data-package="custom">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Simple Process</span>
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            
+            <div class="steps-timeline">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Request a Quote</h3>
+                        <p>Fill out our simple form with your event details, guest count, and preferences</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Customize Your Menu</h3>
+                        <p>Work with our team to create the perfect menu for your event</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Confirm & Relax</h3>
+                        <p>Review your order, confirm booking, and let us handle the rest</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Enjoy Your Event</h3>
+                        <p>We'll deliver, set up, and ensure everything is perfect for your guests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="catering-gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Recent Events</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop" alt="Corporate event catering" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Corporate Lunch</h4>
+                        <p>150 guests</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop" alt="Wedding reception" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Wedding Reception</h4>
+                        <p>200 guests</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&h=400&fit=crop" alt="Birthday party" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Birthday Party</h4>
+                        <p>50 guests</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&h=400&fit=crop" alt="School event" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>School Fundraiser</h4>
+                        <p>300 guests</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1478145787956-f6f12c59624d?w=600&h=400&fit=crop" alt="Office party" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Team Building</h4>
+                        <p>80 guests</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&h=400&fit=crop" alt="Graduation party" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Graduation Party</h4>
+                        <p>120 guests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="quote-form-section" id="quote-form">
+        <div class="container">
+            <div class="quote-form-wrapper">
+                <div class="quote-form-info">
+                    <h2>Request a Quote</h2>
+                    <p>Fill out the form and we'll get back to you within 24 hours with a custom quote for your event.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Call Us</strong>
+                                <a href="tel:+12815551234">(281) 555-1234</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email Us</strong>
+                                <a href="mailto:catering@chicagopizza.com">catering@chicagopizza.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Response Time</strong>
+                                <span>Within 24 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Fully Insured</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Licensed & Certified</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-award"></i>
+                            <span>Award Winning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="quote-form" id="cateringQuoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Event Date *</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventType">Event Type *</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select event type</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="birthday">Birthday Party</option>
+                                <option value="school">School Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guestCount">Number of Guests *</label>
+                            <input type="number" id="guestCount" name="guestCount" min="10" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="packageType">Preferred Package</label>
+                        <select id="packageType" name="packageType">
+                            <option value="">Select a package</option>
+                            <option value="basic">Basic</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="premium">Premium</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventLocation">Event Location</label>
+                        <input type="text" id="eventLocation" name="eventLocation" placeholder="Venue name or address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests or Dietary Restrictions</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Tell us about any special requirements..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter">
+                            <span>Send me updates about special catering offers</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-lg btn-block">
+                        <i class="fas fa-paper-plane"></i> Submit Quote Request
+                    </button>
+                    
+                    <p class="form-note">* Required fields. We respect your privacy and will never share your information.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="catering-faqs">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How far in advance should I book?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 2-3 weeks in advance for large events. However, we can accommodate last-minute requests with as little as 48 hours notice, subject to availability.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you accommodate dietary restrictions?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer vegetarian, vegan, gluten-free, and allergy-friendly options. Just let us know your requirements when requesting a quote.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's included in the setup?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our packages include food delivery, setup, serving utensils, plates, napkins, and cleanup. Premium packages also include dedicated staff and elegant presentation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I customize the menu?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! All our packages can be customized. Choose your favorite pizzas, add extra appetizers, or create a completely custom menu with our catering team.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's your cancellation policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Cancellations made 72 hours before the event receive a full refund. Cancellations within 72 hours may incur a 50% fee. We understand emergencies happen and will work with you.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide staff for the event?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our Deluxe and Premium packages include staff for setup and service. Basic packages are self-serve, but we can add staff for an additional fee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Make Your Event Amazing?</h2>
+                <p>Let's start planning your perfect catering experience today</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary btn-lg" onclick="document.getElementById('quote-form').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-calendar-alt"></i> Request Quote Now
+                    </button>
+                    <a href="tel:+12815551234" class="btn-outline btn-lg">
+                        <i class="fas fa-phone"></i> Call (281) 555-1234
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span>Chicago <span class="highlight">Pizza</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Authentic Chicago-style thin crust pizza, handcrafted with passion since 1987.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html#locations">Locations</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="index.html#rewards">Rewards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Catering</h4>
+                    <ul>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#quote-form">Request Quote</a></li>
+                        <li><a href="tel:+12815551234">Call Us</a></li>
+                        <li><a href="mailto:catering@chicagopizza.com">Email Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="location-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <a href="tel:+12815551234">(281) 555-1234</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:catering@chicagopizza.com">catering@chicagopizza.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2024 Chicago Premium Pizza. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/catering.js"></script>
+</body>
+</html>
